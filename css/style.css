@@ -1,0 +1,8 @@
+html {
+    scroll-behavior: smooth;
+    background-image: linear-gradient(to bottom right, #000000,#ffffff);
+    background-repeat: no-repeat;
+}
+h1 {
+    color: gray;
+}
