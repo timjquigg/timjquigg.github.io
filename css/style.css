@@ -1,0 +1,79 @@
+/* Fonts for this website */
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@400;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 2.5rem;
+    /*background-image: linear-gradient(to bottom right, #000000,#ffffff);
+    background-repeat: no-repeat;*/
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    color: #6A8AC8;
+}
+
+body {
+    position: relative;
+    top: 2.5rem;
+    height: 100%;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    margin: 0.7rem;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+a {
+    color: inherit;   
+}
+
+p {
+    //text-align: justify;
+}
+
+img {
+    max-width: 100%;
+    margin: 0;
+}
+
+.navigation-items {
+    background-color: #ffffff;
+    position: fixed;
+    display: flex;
+    top: 0;
+    height: 2.5rem;
+    width: 100%;
+    margin: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    border-bottom: 1px solid;
+    z-index: 10;
+}
+
+.navigation-item * {
+    width: 100%;
+    margin: auto;
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    text-align: center;
+    margin: 0.2rem;
+}
+
+main {
+    padding: 0 0.7rem;
+}
+
+/*
+#bio {
+    display: none;
+}
+*/
