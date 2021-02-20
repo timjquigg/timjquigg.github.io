@@ -67,18 +67,11 @@ main {
     padding: 0 0.7rem;
 }
 
-/*
-#bio {
-    display: none;
-}
-*/
-
 #contact {
     display: flex;
     flex-direction: column;
     margin: auto;
     width: 100%;
-    //margin: 0.2rem;
 }
 
 #contact p {
@@ -107,7 +100,7 @@ main {
         width: 100%;
         max-height: 600px;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 20% 20% 20% 20% 20%;
+        grid-template-rows: 10% 90%;
     }
     
     #about h2 {
@@ -123,12 +116,70 @@ main {
     
     #about img {
         object-fit: contain;
-        align-self: center;
+        align-self: start;
         justify-self: center;
         grid-column: 1;
-        grid-row: 1 / span 5;
+        grid-row: 2;
     }
     
+    #experience{
+        display: grid;
+        grid-gap: 0.7rem 0.7rem;
+        width: 100%;
+        min-height: 500px;
+        max-height: 600px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 10% 1fr 1fr;
+    }
+    
+    #experience h2 {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+    }
+    
+    #responsive {
+        display: grid;
+        grid-gap: 0rem 0.7rem;
+        grid-column: 1 / span 3;
+        grid-row: 2;
+        grid-template-columns: subgrid;
+    }
+    #responsive .info {
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        grid-row: 2;
+    }
+    
+    #responsive img {
+        object-fit: scale-down;
+        align-self: center;
+        justify-self: center;
+        grid-column: 3;
+        grid-row: 2;
+        border: 1px solid;
+    }
+
+    #javascript {
+        display: grid;
+        grid-gap: 0rem 0.7rem;
+        grid-column: 1 / span 3;
+        grid-row: 3;
+        grid-template-columns: subgrid;
+    }
+    #javascript .info {
+        grid-column: 1 / span 2;
+        grid-row: 3;
+    }
+
+    #javascript img {
+        object-fit: scale-down;
+        align-self: center;
+        justify-self: center;
+        grid-column: 3;
+        grid-row: 3;
+        border: 1px solid;
+    }
+
     #contact {
         max-width: 900px;
     }
