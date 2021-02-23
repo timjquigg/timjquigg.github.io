@@ -1,9 +1,60 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Tim's Site</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+        <title>Tim's Portfolio Page</title>
+        <link type="text/css" rel="stylesheet" href="css/style.css" />
     </head>
     <body>
-        <h1>Hello World</h1>
+        <nav>
+            <ul class="navigation-items">
+                <li class="navigation-item"><a href="#about">About</a></li>
+                <li class="navigation-item"><a href="#experience">Experience</a></li>
+                <li class="navigation-item"><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <header>
+            <h1>Tim Quigg P.Eng</h1>
+        </header>
+        <main>
+            <article id="about">
+                <h2>About Me</h2>
+                <div id="bio">
+                    <p>I am a Professional Engineer from Calgary with 8 years of experience in the oil and gas sector and more than 4 years in the automotive service section starting out my journey as a web developer.</p>
+                    <p>I always enjoyed learning computer programming in highschool and university but never thought about making it a career until the recent declines in traditional engineering jobs in Calgary in oil and gas. In highschool I recieved an introduction to writing programs in Java. In university I took a course in the C programming language and used those skills to perform calculations throughout my university program.</p>
+                    <p>Once I entered the engineering workforce, my computer programming sat mostly on the back burner. I occasionally wrote automations in Microsoft Excel using Visual Basic. But for the most part, my coding muscles sat dormant.</p>
+                    <p>The lagging oil and gas industries in Calgary have really made me re-examine what I want to be doing and as my wife asked me last year "what I wanted to do when I grow up." Funny to think of being asked that question already 10+ years into the workforce. But it reminded me of the excitement I always experience when designing an algorithm or the joy I recieved when I finally figured out a bug and my code gave me the results I was expecting.</p>
+                    <p>So better late than never, I'm honing my coding skills and looking to transition to a career in development!</p>
+                </div>
+                <img src="img/profile2.jpg" alt="Tim Profile picture">
+            </article>
+            <section id="experience">
+                <h2>Experience</h2>
+                <div id="responsive">
+                    <div class="info">
+                        <h3>Responsive Web Deisgn</h3>  
+                        <p><a href="https://timjquigg.github.io/toddler-club/" target="_blank">Toddler Play Club</a></p>
+                        <p>This was a project I created while working through the Full Stack Engineer career path at <a href="https://codecademy.com" target="_blank">Codecademy.com</a>. The project was to make a responsive website for a club. My wife suggested a "club" for toddlers to get together and play. I thought that was a good idea so made a website for a fictional dayhome.</p>
+                        <p>This webpage was created in VS Code using HTML and CSS.</p>
+                    </div>
+                    <img src="img/toddler.png" alt="screenshot from Toddler Club website">
+                </div>
+                <div id="javascript">
+                    <div class="info">
+                        <h3>Javascript</h3>
+                            <p><a href="https://github.com/timjquigg/whisky-assigner" target="_blank">Whisky Assigner</a></p>
+                            <p>This was another project I created while working through the Full Stack Engineer career path at <a href="https://codecademy.com" target="_blank">Codecademy.com</a>. This program was written to randomly assign a Scotch whisky region to each guest attending a whisky tasting night. My group of friends and I enjoy whisky tasting evenings and this was a fun way to make sure that everyone brought a bottle from a different region to highlight the different styles and flavor profiles. I had previously made a similar program using python. </p>
+                            <p>This program was written in javascript using VS Code and run using Node JS.</p>
+                        </div>
+                    <img src="img/whisky.PNG" alt="screenshot of whisky selector source code">
+                </div>
+            </section>
+            
+        </main>
+        <footer>
+
+        </footer>
     </body>
-</html>
+</html> 
