@@ -1,6 +1,8 @@
 /* Fonts for this website */
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@400;700&display=swap');
 
+/*   Global Styles   */
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 2.5rem;
@@ -35,6 +37,11 @@ img {
     margin: 0;
 }
 
+main {
+    padding: 0 0.7rem;
+}
+
+/*   Navigation Bar Styles   */
 .navigation-items {
     background-color: #fff8e6;
     position: fixed;
@@ -58,14 +65,14 @@ img {
     color: inherit;
 }
 
+/*   Header   */
+
 header {
     text-align: center;
     margin: 0.2rem;
 }
 
-main {
-    padding: 0 0.7rem;
-}
+/*   Contact Page   */
 
 #contact {
     display: flex;
@@ -128,7 +135,7 @@ main {
         width: 100%;
         min-height: 500px;
         max-height: 600px;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 10% 1fr 1fr;
     }
     
@@ -142,7 +149,7 @@ main {
         grid-gap: 0rem 0.7rem;
         grid-column: 1 / span 3;
         grid-row: 2;
-        grid-template-columns: subgrid;
+        grid-template-columns: repeat(3, 1fr);
     }
     #responsive .info {
         grid-column-start: 1;
@@ -164,7 +171,7 @@ main {
         grid-gap: 0rem 0.7rem;
         grid-column: 1 / span 3;
         grid-row: 3;
-        grid-template-columns: subgrid;
+        grid-template-columns: repeat(3, 1fr);
     }
     #javascript .info {
         grid-column: 1 / span 2;
