@@ -39,6 +39,7 @@ img {
 
 main {
     padding: 0 0.7rem;
+    //margin-bottom: 3.2rem;
 }
 
 /*   Navigation Bar Styles   */
@@ -91,13 +92,35 @@ header {
     object-fit: contain;
 }
 
+#experience {
+    margin-bottom: 5.5rem;
+}
+
+/*   Footer */
+
+footer {
+    background-color: #fff8e6;
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    height: 2.5rem;
+    width: 100%;
+    margin: 0;
+    //padding-top: 2.5rem;
+    border-top: 1px solid;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
 @media screen and (min-width: 768px) {
     body {
         max-width: 900px;
         margin: auto;
     }
     
-    .navigation-items {
+    .navigation-items, footer {
         max-width: 900px;
     }
     
@@ -116,9 +139,8 @@ header {
     }
     
     #bio {
-        grid-column-start: 2;
-        grid-column-end: span 2;
-        grid-row-start: 1;
+        grid-column: 2 / span 2;
+        grid-row: 1 / span 2;
     }
     
     #about img {
@@ -201,7 +223,7 @@ header {
     #contact {
         max-width: 1024px;
     }
-    .navigation-items {
+    .navigation-items, footer {
         max-width: 1024px;
     }
 }
